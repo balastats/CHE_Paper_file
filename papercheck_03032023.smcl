@@ -1,0 +1,2807 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 3 Mar 2023, 09:00:54
+
+{com}. tab total_no_of_family_members
+
+{txt}demographic {c |}
+    s_count {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          2 {c |}{res}         66        1.56        1.56
+{txt}          3 {c |}{res}        426       10.09       11.65
+{txt}          4 {c |}{res}      1,132       26.81       38.46
+{txt}          5 {c |}{res}      1,105       26.17       64.62
+{txt}          6 {c |}{res}        852       20.18       84.80
+{txt}          7 {c |}{res}        301        7.13       91.93
+{txt}          8 {c |}{res}        184        4.36       96.28
+{txt}          9 {c |}{res}         45        1.07       97.35
+{txt}         10 {c |}{res}         10        0.24       97.58
+{txt}         11 {c |}{res}         22        0.52       98.11
+{txt}         12 {c |}{res}         36        0.85       98.96
+{txt}         14 {c |}{res}         14        0.33       99.29
+{txt}         15 {c |}{res}         30        0.71      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. sum total_no_of_family_members
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}      4,223    5.204594    1.861197          2         15
+
+{com}. bys area :sum total_no_of_family_members
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}      2,833    5.252736    1.910889          2         15
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}      1,390    5.106475    1.752144          2         14
+
+
+{com}. bys area :sum total_no_of_family_members if tag ==1
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}        600    4.716667     1.59498          2         15
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}        300    4.633333    1.483089          2         14
+
+
+{com}. tab tag
+
+  {txt}tag(hhid) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,323       78.69       78.69
+{txt}          1 {c |}{res}        900       21.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab tag1
+
+   {txt}tag(hhid {c |}
+disability) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      4,041       95.69       95.69
+{txt}          1 {c |}{res}        182        4.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab taghhopd
+
+  {txt}tag(hhid) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,323       78.69       78.69
+{txt}          1 {c |}{res}        900       21.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab tag_opid
+
+   {txt}tag(hhid {c |}
+    opd_id) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,680       87.14       87.14
+{txt}          1 {c |}{res}        543       12.86      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. ed hhid total_no_of_family_members if tag==1
+
+. ed hhid total_no_of_family_members tag if tag==1
+
+. bys area :sum total_no_of_family_members
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}      2,833    5.252736    1.910889          2         15
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+total_no_o~s {c |}{res}      1,390    5.106475    1.752144          2         14
+
+
+{com}. tab age_child
+
+  {txt}age_child {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    Child>5 {c |}{res}        367        8.69        8.69
+{txt}    Child<5 {c |}{res}      3,856       91.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab age_child if tag ==1
+
+  {txt}age_child {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    Child>5 {c |}{res}         60        6.67        6.67
+{txt}    Child<5 {c |}{res}        840       93.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}.  gen age5_65=1 if (age1<=5 | age1>=65)
+{txt}(3,545 missing values generated)
+
+{com}. ed
+
+. ed hhid ag*
+
+. bys hhid: egen age_gr5_65=min(age5_65)
+{txt}(1880 missing values generated)
+
+{com}. replace age_gr5_65=0 if age_gr5_65==.
+{txt}(1,880 real changes made)
+
+{com}. tab age_gr5_65 if tag==1
+
+ {txt}age_gr5_65 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        454       50.44       50.44
+{txt}          1 {c |}{res}        446       49.56      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. exit, clear
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 6 Mar 2023, 10:24:52
+
+{com}. ed
+
+. exit, clear
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 6 Mar 2023, 11:03:25
+
+{com}. bys area:tab gender if relation_hh =="1"
+
+{txt}{hline}
+-> area = R
+
+     gender {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        504       84.00       84.00
+{txt}          2 {c |}{res}         96       16.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+     gender {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        247       82.33       82.33
+{txt}          2 {c |}{res}         53       17.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab education_status if tag==1 & relation_hh=="1"
+
+{txt}education_s {c |}
+      tatus {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}         37        9.95        9.95
+{txt}          2 {c |}{res}         64       17.20       27.15
+{txt}          3 {c |}{res}        212       56.99       84.14
+{txt}          4 {c |}{res}         25        6.72       90.86
+{txt}          5 {c |}{res}          9        2.42       93.28
+{txt}          6 {c |}{res}         18        4.84       98.12
+{txt}          7 {c |}{res}          7        1.88      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        372      100.00
+
+{com}. bys area :tab  opd_period if opd_period!=3
+
+{txt}{hline}
+-> area = R
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        164       24.26       24.26
+{txt}          2 {c |}{res}        512       75.74      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        676      100.00
+
+{txt}{hline}
+-> area = U
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        104       23.69       23.69
+{txt}          2 {c |}{res}        335       76.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        439      100.00
+
+
+{com}. tab education_status if tag==1 & relation_hh=="1"
+
+{txt}education_s {c |}
+      tatus {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}         37        9.95        9.95
+{txt}          2 {c |}{res}         64       17.20       27.15
+{txt}          3 {c |}{res}        212       56.99       84.14
+{txt}          4 {c |}{res}         25        6.72       90.86
+{txt}          5 {c |}{res}          9        2.42       93.28
+{txt}          6 {c |}{res}         18        4.84       98.12
+{txt}          7 {c |}{res}          7        1.88      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        372      100.00
+
+{com}. bys area :tab  opd_period if opd_period!=3
+
+{txt}{hline}
+-> area = R
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        164       24.26       24.26
+{txt}          2 {c |}{res}        512       75.74      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        676      100.00
+
+{txt}{hline}
+-> area = U
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        104       23.69       23.69
+{txt}          2 {c |}{res}        335       76.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        439      100.00
+
+
+{com}. bys area :tab  opd_period if opd_period!=3
+
+{txt}{hline}
+-> area = R
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        164       24.26       24.26
+{txt}          2 {c |}{res}        512       75.74      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        676      100.00
+
+{txt}{hline}
+-> area = U
+
+ opd_period {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        104       23.69       23.69
+{txt}          2 {c |}{res}        335       76.31      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        439      100.00
+
+
+{com}. ed]
+{err}] invalid name
+{txt}{search r(198), local:r(198);}
+
+{com}. exit, clear
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Mar 2023, 08:47:09
+
+{com}. tab op_hos
+
+     {txt}op_hos {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          2 {c |}{res}         81        6.86        6.86
+{txt}          3 {c |}{res}         13        1.10        7.97
+{txt}          4 {c |}{res}        170       14.41       22.37
+{txt}          5 {c |}{res}        850       72.03       94.41
+{txt}          6 {c |}{res}          7        0.59       95.00
+{txt}          7 {c |}{res}         59        5.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,180      100.00
+
+{com}. ed
+
+. tab hhopd
+
+      {txt}hhopd {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      2,427       57.47       57.47
+{txt}          1 {c |}{res}      1,796       42.53      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab hh1opd
+
+     {txt}hh1opd {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      2,427       57.47       57.47
+{txt}          1 {c |}{res}      1,796       42.53      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab opd_seek
+
+   {txt}opd_seek {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}      1,242       97.34       97.34
+{txt}          2 {c |}{res}         34        2.66      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,276      100.00
+
+{com}. bys area : tab health_insurance_scheme if tag==1
+
+{txt}{hline}
+-> area = R
+
+health_insu {c |}
+rance_schem {c |}
+          e {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        267       44.50       44.50
+{txt}          2 {c |}{res}        330       55.00       99.50
+{txt}          3 {c |}{res}          3        0.50      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+health_insu {c |}
+rance_schem {c |}
+          e {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        145       48.33       48.33
+{txt}          2 {c |}{res}        151       50.33       98.67
+{txt}          3 {c |}{res}          4        1.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. ed
+
+. bys area : tabstat op_total_check2   if  tag==1 & op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:op_total_c~2} {...}
+{c |}{...}
+ {res}      318  2496.497  3630.221       400      1175      3180        10     29150
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:op_total_c~2} {...}
+{c |}{...}
+ {res}      196  1697.483  2824.243       215     687.5      2000        20     25900
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta saved
+
+{com}. ed
+
+. tab op_hos
+
+     {txt}op_hos {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          2 {c |}{res}         81        6.86        6.86
+{txt}          3 {c |}{res}         13        1.10        7.97
+{txt}          4 {c |}{res}        170       14.41       22.37
+{txt}          5 {c |}{res}        850       72.03       94.41
+{txt}          6 {c |}{res}          7        0.59       95.00
+{txt}          7 {c |}{res}         59        5.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,180      100.00
+
+{com}. tab opd_hosp
+
+   {txt}opd_hosp {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+     Others {c |}{res}        418       27.28       27.28
+{txt}    Private {c |}{res}        850       55.48       82.77
+{txt}     Public {c |}{res}        264       17.23      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,532      100.00
+
+{com}. tab ipd
+
+        {txt}ipd {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        268        6.35        6.35
+{txt}          2 {c |}{res}      3,955       93.65      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. tab ip_count
+
+   {txt}ip_count {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,212       76.06       76.06
+{txt}          1 {c |}{res}        913       21.62       97.68
+{txt}          2 {c |}{res}         86        2.04       99.72
+{txt}          3 {c |}{res}          6        0.14       99.86
+{txt}          4 {c |}{res}          6        0.14      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. ta ip_fam
+
+     {txt}ip_fam {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,212       76.06       76.06
+{txt}          1 {c |}{res}      1,011       23.94      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. bys area :ta ip_fam
+
+{txt}{hline}
+-> area = R
+
+     ip_fam {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      2,107       74.37       74.37
+{txt}          1 {c |}{res}        726       25.63      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,833      100.00
+
+{txt}{hline}
+-> area = U
+
+     ip_fam {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      1,105       79.50       79.50
+{txt}          1 {c |}{res}        285       20.50      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,390      100.00
+
+
+{com}. tab ipd_times
+
+  {txt}ipd_times {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        239       89.18       89.18
+{txt}          2 {c |}{res}         22        8.21       97.39
+{txt}          3 {c |}{res}          3        1.12       98.51
+{txt}          4 {c |}{res}          3        1.12       99.63
+{txt}          9 {c |}{res}          1        0.37      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        268      100.00
+
+{com}. bys area :ta ip_fam if tag==1
+
+{txt}{hline}
+-> area = R
+
+     ip_fam {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        457       76.17       76.17
+{txt}          1 {c |}{res}        143       23.83      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+     ip_fam {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        239       79.67       79.67
+{txt}          1 {c |}{res}         61       20.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. 
+. 
+. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta saved
+
+{com}. bys area : tabstat direct_medical_exp    if  tag==1 & op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : tabstat direct_medical_exp    if  tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      600  996.5967  2385.491         0         0       950         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      300    726.67   1640.75         0       150       700         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : tabstat direct_medical_exp  , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     2833  1054.407  2352.978         0         0      1000         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1390  794.6489  1703.987         0       200       800         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : sum direct_medical_exp
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_med~p {c |}{res}      2,833    1054.407    2352.978          0      29050
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_med~p {c |}{res}      1,390    794.6489    1703.987          0      16000
+
+
+{com}. bys area : sum direct_medical_exp_12
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}      2,833    12652.88    28235.73          0     348600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}      1,390    9535.787    20447.84          0     192000
+
+
+{com}. bys area : sum direct_nondirect_indirect
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+dir~indirect {c |}{res}      2,833    23613.82    47387.53          0     678460
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+dir~indirect {c |}{res}      1,390     24268.1    59118.44          0     803000
+
+
+{com}. bys area : sum direct_method1_10
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~10 {c |}{res}      2,833    11.24415    30.23441          0   446.9231
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~10 {c |}{res}      1,390    10.63765    30.49488          0   400.4004
+
+
+{com}. ed
+
+. bys area : sum che_direct_40_yr
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+che_direct.. {c |}{res}      2,833    .1743735    .3794973          0          1
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+che_direct.. {c |}{res}      1,390    .1338129    .3405738          0          1
+
+
+{com}. bys area : sum direct
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}direct {c |}{res}      2,833    18349.71    41822.67          0     668600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}direct {c |}{res}      1,390    18334.25    53806.73          0     800000
+
+
+{com}. bys area : sum direct_op_ip
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_op_ip {c |}{res}      2,833    18349.71    41822.67          0     668600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_op_ip {c |}{res}      1,390    18334.25    53806.73          0     800000
+
+
+{com}. bys area : sum direct_medical_exp_12
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}      2,833    12652.88    28235.73          0     348600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}      1,390    9535.787    20447.84          0     192000
+
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\table_che_peper_04_10_2022.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area : sum direct
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}direct {c |}{res}        600    17425.64    42918.38          0     668600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}direct {c |}{res}        300    17991.77    56787.27          0     800000
+
+
+{com}. ed
+
+. bys area : sum direct_op_ip
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_op_ip {c |}{res}        600    17425.64    42918.38          0     668600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_op_ip {c |}{res}        300    17991.77    56787.27          0     800000
+
+
+{com}. bys area : sum direct_medical_exp
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_med~p {c |}{res}        600    996.5967    2385.491          0      29050
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_med~p {c |}{res}        300      726.67     1640.75          0      16000
+
+
+{com}. bys area : sum direct_medical_exp_12
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}        600    11959.16    28625.89          0     348600
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+direct_me~12 {c |}{res}        300     8720.04       19689          0     192000
+
+
+{com}. bys area : tabstat direct_medical_exp_12   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      600  11959.16  28625.89         0         0     11400         0    348600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      300   8720.04     19689         0      1800      8400         0    192000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : tabstat direct_medical_exp_12 if tag==1   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      600  11959.16  28625.89         0         0     11400         0    348600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      300   8720.04     19689         0      1800      8400         0    192000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : tabstat direct_medical_exp    if  tag==1 & op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area : tabstat che_direct_nondirect_indirect_40     if  tag==1 & op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:che_direc~40} {...}
+{c |}{...}
+ {res}      318  .3333333  .4721475         0         0         1         0         1
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:che_direc~40} {...}
+{c |}{...}
+ {res}      196   .244898  .4311279         0         0         0         0         1
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if tag==1 & op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1552    1924.7  2903.975       250       900      2670         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      925  1194.121  1971.611       200       500      1300         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\merge_odd_ratio_data_10_40.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}op_fam not found
+{txt}{search r(111), local:r(111);}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\op_ip_dir_non_dir_indir_year.dta", clear
+
+. bys area :tabstat direct  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+{err}variable {bf}area{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+{err}variable {bf}area{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. ed
+
+. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data1.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1552    1924.7  2903.975       250       900      2670         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      925  1194.121  1971.611       200       500      1300         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE\che_data_work_27082022.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp_12  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      318  22564.45  36171.13      2400     10200     30600         0    348600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      196     13347  23072.36      1890      6000     14100         0    192000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp_12  , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      600  11959.16  28625.89         0         0     11400         0    348600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}      300   8720.04     19689         0      1800      8400         0    192000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE\che_data_work_27082022_v2.dta", clear
+
+. bys area :tabstat direct_medical_exp_12  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp_12{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. ed
+
+. bys area :tabstat direct if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}op_fam not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}op_fam not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE\che_paper_data_10_40_table.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE\merge_odd_ratio_data_10_40.dta", clear
+
+. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE_178_bivariate_table\CHE_178_bivariate_table_data.dta", clear
+
+. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\CHE_178_bivariate_table\merge_bivariate_table_data_with_che.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1552    1924.7  2903.975       250       900      2670         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      925  1194.121  1971.611       200       500      1300         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. ed
+
+. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1552    1924.7  2903.975       250       900      2670         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      925  1194.121  1971.611       200       500      1300         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\merge_odd_ratio_data_10_40.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\merge_odd_ratio_data_10_40.dta", clear
+
+. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}direct_medical_exp{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\op_ip_dir_non_dir_indir_year.dta", clear
+
+. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+{err}variable {bf}area{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+{err}variable {bf}area{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+{bf}{err}direct{sf} ambiguous abbreviation
+{txt}{search r(111), local:r(111);}
+
+{com}. tabstat Direct_op_ip   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:Direct_op_ip} {...}
+{c |}{...}
+ {res}      900  17614.35  47957.48         0      1960     16500         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. tabstat Direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:Direct} {...}
+{c |}{...}
+ {res}      900  17614.35  47957.48         0      1960     16500         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. ed
+
+. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1552    1924.7  2903.975       250       900      2670         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      925  1194.121  1971.611       200       500      1300         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\table_che_peper_04_10_2022.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      318  1880.371  3014.261       200       850      2550         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      196   1112.25  1922.697     157.5       500      1175         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. ed
+
+. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\op_ip_dir_non_dir_indir_year.dta", clear
+
+. ed
+
+. bys area :tabstat Direct_op_ip   , stat ( n mean sd p25 p50 p75 min max)
+{err}variable {bf}area{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. gen area=substr(hhid,2,2)
+
+. ed
+
+. drop area
+
+. gen area=substr(hhid,2,1)
+
+. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\op_ip_dir_non_dir_indir_year.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\op_ip_dir_non_dir_indir_year.dta saved
+
+{com}. bys area :tabstat Direct_op_ip   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:Direct_op_ip} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:Direct_op_ip} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\table_che_peper_04_10_2022.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. bys area :tabstat Direct_op_ip ed   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}Direct_op_ip{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. ed
+
+. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. ed
+
+. bys area :tabstat Direct_op_ip ed   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}Direct_op_ip{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct_medical_exp_12   , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}     2833  12652.88  28235.73         0         0     12000         0    348600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_me~12} {...}
+{c |}{...}
+ {res}     1390  9535.787  20447.84         0      2400      9600         0    192000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\healthcare_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. ed
+
+. bys area :tabstat med_cost_total  if op_fam ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:med_cost_t~l} {...}
+{c |}{...}
+ {res}     1552  10134.43  33997.76       800      2350      5580        10    509830
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:med_cost_t~l} {...}
+{c |}{...}
+ {res}      925  9587.659  28786.02       330      1240      4390        20    267580
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_medical_exp   if ipd  ==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}type mismatch
+{txt}{search r(109), local:r(109);}
+
+{com}. bys area :tabstat direct_medical_exp   if ipd  =="1" , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}      175  1112.189  2440.387         0       100      1160         0     16950
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}       93  1334.892   2327.07         0       400      1200         0      9850
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. use "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", clear
+{txt}(table_che_modified_table)
+
+{com}. ed
+
+. bys area :tabstat direct_medical_exp    =="1" , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}== invalid name
+{txt}{search r(198), local:r(198);}
+
+{com}. bys area :tabstat direct_medical_exp , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     2833  1054.407  2352.978         0         0      1000         0     29050
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_med~p} {...}
+{c |}{...}
+ {res}     1390  794.6489  1703.987         0       200       800         0     16000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. ed
+
+. egen ip_direct_medical_exp=rowtotal(ip_bedcharges ip_fee ip_medicine ip_equipment ip_surgery ip_labtest ip_blood ip_fvisit)
+{err}variable {bf}ip_direct_medical_exp{sf} already defined
+{txt}{search r(110), local:r(110);}
+
+{com}. 
+. 
+. bys area :tabstat ip_direct_medical_exp  , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}     2833   5696.83  26689.35         0         0         0         0    485000
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}     1390  8798.468  50190.13         0         0         0         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat ip_direct_medical_exp if tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}      600   5466.48  27047.99         0         0         0         0    485000
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}      300  9271.733  53810.23         0         0         0         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. ed
+
+. bys area :tabstat directif tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}variable {bf}directif{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area :tabstat direct if tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_nondirect, stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:dir~ondirect} {...}
+{c |}{...}
+ {res}     2833  20639.83  43644.19         0      4080     27600         0    678460
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:dir~ondirect} {...}
+{c |}{...}
+ {res}     1390  20015.08  54711.55         0      4000     18000         0    803000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_nondirect_indirect , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:dir~indirect} {...}
+{c |}{...}
+ {res}     2833  23613.82  47387.53         0      5090     31100         0    678460
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:dir~indirect} {...}
+{c |}{...}
+ {res}     1390   24268.1  59118.44         0      5200     24400         0    803000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat direct_op_ip , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_op_ip} {...}
+{c |}{...}
+ {res}     2833  18349.71  41822.67         0      2280     23520         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_op_ip} {...}
+{c |}{...}
+ {res}     1390  18334.25  53806.73         0      3000     16200         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat ip_direct_medical_exp , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}     2833   5696.83  26689.35         0         0         0         0    485000
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:ip_direct_m~} {...}
+{c |}{...}
+ {res}     1390  8798.468  50190.13         0         0         0         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. bys area :tabstat ip_direct_non_medical_exp  , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:i~non_medi~p} {...}
+{c |}{...}
+ {res}     2833    536.85  1565.328         0         0       100         0     16200
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:i~non_medi~p} {...}
+{c |}{...}
+ {res}     1390  398.1259  1190.754         0         0         0         0     13000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. tabstat ip_direct_non_medical_exp  , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:i~non_medi~p} {...}
+{c |}{...}
+ {res}     4223   491.189  1454.058         0         0         0         0     16200
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. tabstat ip_direct_non_medical_exp if tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:i~non_medi~p} {...}
+{c |}{...}
+ {res}      900  444.2089   1369.78         0         0         0         0     16200
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. ed
+
+. bys area : sum ip_direct_medical_exp
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+ip_direct_m~ {c |}{res}      2,833     5696.83    26689.35          0     485000
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+ip_direct_m~ {c |}{res}      1,390    8798.468    50190.13          0     800000
+
+
+{com}. bys area : sum ip_direct_non_medical_exp
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+i~non_medi~p {c |}{res}      2,833      536.85    1565.328          0      16200
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+i~non_medi~p {c |}{res}      1,390    398.1259    1190.754          0      13000
+
+
+{com}. sort hhid
+
+. bys area : sum ip_direct_medical_exp if tag==1
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+ip_direct_m~ {c |}{res}        600     5466.48    27047.99          0     485000
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+ip_direct_m~ {c |}{res}        300    9271.733    53810.23          0     800000
+
+
+{com}. bys area : sum ip_direct_non_medical_exp  if tag==1
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+i~non_medi~p {c |}{res}        600    482.0467    1466.535          0      16200
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+i~non_medi~p {c |}{res}        300    368.5333     1150.73          0      13000
+
+
+{com}. bys area : sum ip_indirect  if tag==1
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 1}ip_indirect {c |}{res}        600    419.2833    2934.656          0      52500
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 1}ip_indirect {c |}{res}        300    888.3333    8748.678          0     135000
+
+
+{com}. bys area : sum ip_total   if tag==1
+
+{txt}{hline}
+-> area = R
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}ip_total {c |}{res}        600     6367.81    28301.26          0     494500
+
+{txt}{hline}
+-> area = U
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}ip_total {c |}{res}        300     10528.6    55335.74          0     803000
+
+
+{com}. bys area : tabstat direct_op_ip if tag==1 & che_40_yr ==1, stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+{err}che_40_yr not found
+{txt}{search r(111), local:r(111);}
+
+{com}. bys area : tabstat direct_op_ip if tag==1 , stat ( n mean sd p25 p50 p75 min max)
+
+{txt}{hline}
+-> area = R
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_op_ip} {...}
+{c |}{...}
+ {res}      600  17425.64  42918.38         0      1350     18605         0    668600
+{txt}{hline 13}{c BT}{hline 80}
+
+{hline}
+-> area = U
+
+{ralign 12:variable} {...}
+{c |}         N      mean        sd       p25       p50       p75       min       max
+{hline 13}{c +}{hline 80}
+{ralign 12:direct_op_ip} {...}
+{c |}{...}
+ {res}      300  17991.77  56787.27         0      2820     13800         0    800000
+{txt}{hline 13}{c BT}{hline 80}
+
+{com}. tab direct_method1_10
+
+{txt}direct_meth {c |}
+     od1_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      1,662       39.36       39.36
+{txt}   .0226943 {c |}{res}          3        0.07       39.43
+{txt}   .0581734 {c |}{res}          4        0.09       39.52
+{txt}   .0673673 {c |}{res}          4        0.09       39.62
+{txt}   .0745379 {c |}{res}          4        0.09       39.71
+{txt}   .0974203 {c |}{res}          5        0.12       39.83
+{txt}   .1029824 {c |}{res}          5        0.12       39.95
+{txt}   .1217285 {c |}{res}          4        0.09       40.04
+{txt}   .1274697 {c |}{res}          6        0.14       40.18
+{txt}   .1454334 {c |}{res}          6        0.14       40.33
+{txt}   .1533742 {c |}{res}          6        0.14       40.47
+{txt}   .1570352 {c |}{res}          6        0.14       40.61
+{txt}   .1572327 {c |}{res}          5        0.12       40.73
+{txt}   .1981506 {c |}{res}          6        0.14       40.87
+{txt}    .218627 {c |}{res}          7        0.17       41.04
+{txt}   .2225519 {c |}{res}          5        0.12       41.16
+{txt}   .2390438 {c |}{res}          5        0.12       41.27
+{txt}   .2397123 {c |}{res}          5        0.12       41.39
+{txt}   .2489627 {c |}{res}          4        0.09       41.49
+{txt}   .2735978 {c |}{res}          5        0.12       41.61
+{txt}   .2747253 {c |}{res}          5        0.12       41.72
+{txt}    .277039 {c |}{res}          4        0.09       41.82
+{txt}   .3080715 {c |}{res}          4        0.09       41.91
+{txt}   .3196017 {c |}{res}          3        0.07       41.98
+{txt}   .3468208 {c |}{res}          5        0.12       42.10
+{err}{hline 2}Break{hline 2}
+{txt}{search r(1), local:r(1);}
+
+{com}. ed
+
+. tab direct_10
+
+  {txt}direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      3,128       74.07       74.07
+{txt}          1 {c |}{res}      1,095       25.93      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      4,223      100.00
+
+{com}. bys area :tab direct_10
+
+{txt}{hline}
+-> area = R
+
+  direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      2,040       72.01       72.01
+{txt}          1 {c |}{res}        793       27.99      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,833      100.00
+
+{txt}{hline}
+-> area = U
+
+  direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}      1,088       78.27       78.27
+{txt}          1 {c |}{res}        302       21.73      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,390      100.00
+
+
+{com}. bys area :tab direct_10 if tag==1
+
+{txt}{hline}
+-> area = R
+
+  direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        439       73.17       73.17
+{txt}          1 {c |}{res}        161       26.83      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+  direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        239       79.67       79.67
+{txt}          1 {c |}{res}         61       20.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab direct_10 if tag==1
+
+  {txt}direct_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        678       75.33       75.33
+{txt}          1 {c |}{res}        222       24.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. bys area :tab direct_nondirect_10  if tag==1
+
+{txt}{hline}
+-> area = R
+
+direct_nond {c |}
+   irect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        425       70.83       70.83
+{txt}          1 {c |}{res}        175       29.17      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+direct_nond {c |}
+   irect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        229       76.33       76.33
+{txt}          1 {c |}{res}         71       23.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab direct_nondirect_10  if tag==1
+
+{txt}direct_nond {c |}
+   irect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        654       72.67       72.67
+{txt}          1 {c |}{res}        246       27.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. bys area :tab direct_nondirect_indirect_10   if tag==1
+
+{txt}{hline}
+-> area = R
+
+direct_nond {c |}
+irect_indir {c |}
+     ect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        403       67.17       67.17
+{txt}          1 {c |}{res}        197       32.83      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+direct_nond {c |}
+irect_indir {c |}
+     ect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        213       71.00       71.00
+{txt}          1 {c |}{res}         87       29.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab direct_nondirect_indirect_10   if tag==1
+
+{txt}direct_nond {c |}
+irect_indir {c |}
+     ect_10 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        616       68.44       68.44
+{txt}          1 {c |}{res}        284       31.56      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. bys area :tab che_direct_40_yr if tag==1
+
+{txt}{hline}
+-> area = R
+
+che_direct_ {c |}
+      40_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        503       83.83       83.83
+{txt}          1 {c |}{res}         97       16.17      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+che_direct_ {c |}
+      40_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        262       87.33       87.33
+{txt}          1 {c |}{res}         38       12.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab che_direct_40_yr if tag==1
+
+{txt}che_direct_ {c |}
+      40_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        765       85.00       85.00
+{txt}          1 {c |}{res}        135       15.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. bys area :tab che_direct_nondirect_40_yr  if tag==1
+
+{txt}{hline}
+-> area = R
+
+che_direct_ {c |}
+nondirect_4 {c |}
+       0_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        488       81.33       81.33
+{txt}          1 {c |}{res}        112       18.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+che_direct_ {c |}
+nondirect_4 {c |}
+       0_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        259       86.33       86.33
+{txt}          1 {c |}{res}         41       13.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. tab che_direct_nondirect_40_yr  if tag==1
+
+{txt}che_direct_ {c |}
+nondirect_4 {c |}
+       0_yr {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        747       83.00       83.00
+{txt}          1 {c |}{res}        153       17.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. tab che_direct_nondirect_indirect_40   if tag==1
+
+{txt}che_direct_ {c |}
+nondirect_i {c |}
+ ndirect_40 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        722       80.22       80.22
+{txt}          1 {c |}{res}        178       19.78      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        900      100.00
+
+{com}. bys area :tab che_direct_nondirect_indirect_40   if tag==1
+
+{txt}{hline}
+-> area = R
+
+che_direct_ {c |}
+nondirect_i {c |}
+ ndirect_40 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        477       79.50       79.50
+{txt}          1 {c |}{res}        123       20.50      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        600      100.00
+
+{txt}{hline}
+-> area = U
+
+che_direct_ {c |}
+nondirect_i {c |}
+ ndirect_40 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        245       81.67       81.67
+{txt}          1 {c |}{res}         55       18.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        300      100.00
+
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta saved
+
+{com}.  bys area: logit direct_10 total_no_of_family_members  if tag==1, or
+
+{txt}{hline}
+-> area = R
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-348.95645}  
+Iteration 1:{space 3}log likelihood = {res:-347.13891}  
+Iteration 2:{space 3}log likelihood = {res:-347.13193}  
+Iteration 3:{space 3}log likelihood = {res:-347.13193}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       600
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      3.65
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0561
+{txt}Log likelihood = {res}-347.13193{txt}{col 49}Pseudo R2{col 67}= {res}    0.0052
+
+{txt}{hline 27}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 direct_10{col 28}{c |} Odds Ratio{col 40}   Std. Err.{col 52}      z{col 60}   P>|z|{col 68}     [95% Con{col 81}f. Interval]
+{hline 27}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+total_no_of_family_members {c |}{col 28}{res}{space 2} 1.113238{col 40}{space 2} .0621307{col 51}{space 1}    1.92{col 60}{space 3}0.055{col 68}{space 4} .9978874{col 81}{space 3} 1.241921
+{txt}{space 21}_cons {c |}{col 28}{res}{space 2} .2197177{col 40}{space 2} .0626088{col 51}{space 1}   -5.32{col 60}{space 3}0.000{col 68}{space 4} .1256939{col 81}{space 3}  .384075
+{txt}{hline 27}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> area = U
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-151.49665}  
+Iteration 1:{space 3}log likelihood = {res:-149.86712}  
+Iteration 2:{space 3}log likelihood = {res:-149.84435}  
+Iteration 3:{space 3}log likelihood = {res:-149.84435}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       300
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      3.30
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0691
+{txt}Log likelihood = {res}-149.84435{txt}{col 49}Pseudo R2{col 67}= {res}    0.0109
+
+{txt}{hline 27}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 direct_10{col 28}{c |} Odds Ratio{col 40}   Std. Err.{col 52}      z{col 60}   P>|z|{col 68}     [95% Con{col 81}f. Interval]
+{hline 27}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+total_no_of_family_members {c |}{col 28}{res}{space 2} 1.181951{col 40}{space 2} .1077902{col 51}{space 1}    1.83{col 60}{space 3}0.067{col 68}{space 4} .9884912{col 81}{space 3} 1.413274
+{txt}{space 21}_cons {c |}{col 28}{res}{space 2} .1156163{col 40}{space 2} .0535948{col 51}{space 1}   -4.65{col 60}{space 3}0.000{col 68}{space 4} .0466056{col 81}{space 3} .2868137
+{txt}{hline 27}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+. 
+.  logit direct_10 total_no_of_family_members  if tag==1, or
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-502.77905}  
+Iteration 1:{space 3}log likelihood = {res: -499.3486}  
+Iteration 2:{space 3}log likelihood = {res: -499.3277}  
+Iteration 3:{space 3}log likelihood = {res: -499.3277}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       900
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      6.90
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0086
+{txt}Log likelihood = {res} -499.3277{txt}{col 49}Pseudo R2{col 67}= {res}    0.0069
+
+{txt}{hline 27}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 direct_10{col 28}{c |} Odds Ratio{col 40}   Std. Err.{col 52}      z{col 60}   P>|z|{col 68}     [95% Con{col 81}f. Interval]
+{hline 27}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+total_no_of_family_members {c |}{col 28}{res}{space 2} 1.134113{col 40}{space 2} .0539568{col 51}{space 1}    2.65{col 60}{space 3}0.008{col 68}{space 4}  1.03314{col 81}{space 3} 1.244953
+{txt}{space 21}_cons {c |}{col 28}{res}{space 2} .1798321{col 40}{space 2} .0435996{col 51}{space 1}   -7.08{col 60}{space 3}0.000{col 68}{space 4} .1118141{col 81}{space 3} .2892262
+{txt}{hline 27}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\Table_CHE_Modified_data.dta saved
+
+{com}.  logit direct_nondirect_indirect_10 total_no_of_family_members  if tag==1, or
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-561.12647}  
+Iteration 1:{space 3}log likelihood = {res:-557.36697}  
+Iteration 2:{space 3}log likelihood = {res:-557.35942}  
+Iteration 3:{space 3}log likelihood = {res:-557.35942}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       900
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      7.53
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0061
+{txt}Log likelihood = {res}-557.35942{txt}{col 49}Pseudo R2{col 67}= {res}    0.0067
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}total_no_of_family_members {c |}{col 30}{res}{space 2} 1.132227{col 42}{space 2} .0513519{col 53}{space 1}    2.74{col 62}{space 3}0.006{col 70}{space 4} 1.035923{col 83}{space 3} 1.237484
+{txt}{space 23}_cons {c |}{col 30}{res}{space 2} .2559807{col 42}{space 2} .0584679{col 53}{space 1}   -5.97{col 62}{space 3}0.000{col 70}{space 4} .1636013{col 83}{space 3} .4005234
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}.  bys area :logit direct_nondirect_indirect_10 total_no_of_family_members  if tag==1, or
+
+{txt}{hline}
+-> area = R
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-379.79522}  
+Iteration 1:{space 3}log likelihood = {res:-377.82422}  
+Iteration 2:{space 3}log likelihood = {res:-377.82139}  
+Iteration 3:{space 3}log likelihood = {res:-377.82139}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       600
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      3.95
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0469
+{txt}Log likelihood = {res}-377.82139{txt}{col 49}Pseudo R2{col 67}= {res}    0.0052
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}total_no_of_family_members {c |}{col 30}{res}{space 2} 1.112579{col 42}{space 2}  .059777{col 53}{space 1}    1.99{col 62}{space 3}0.047{col 70}{space 4} 1.001376{col 83}{space 3} 1.236131
+{txt}{space 23}_cons {c |}{col 30}{res}{space 2} .2942554{col 42}{space 2} .0800054{col 53}{space 1}   -4.50{col 62}{space 3}0.000{col 70}{space 4} .1726992{col 83}{space 3} .5013701
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> area = U
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res: -180.6455}  
+Iteration 1:{space 3}log likelihood = {res:-178.77773}  
+Iteration 2:{space 3}log likelihood = {res:-178.77113}  
+Iteration 3:{space 3}log likelihood = {res:-178.77113}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       300
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      3.75
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0528
+{txt}Log likelihood = {res}-178.77113{txt}{col 49}Pseudo R2{col 67}= {res}    0.0104
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}total_no_of_family_members {c |}{col 30}{res}{space 2} 1.177023{col 42}{space 2}  .099875{col 53}{space 1}    1.92{col 62}{space 3}0.055{col 70}{space 4} .9966832{col 83}{space 3} 1.389993
+{txt}{space 23}_cons {c |}{col 30}{res}{space 2}  .189898{col 42}{space 2} .0803514{col 53}{space 1}   -3.93{col 62}{space 3}0.000{col 70}{space 4} .0828614{col 83}{space 3} .4351997
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}.  logit che_direct_nondirect_indirect_40 total_no_of_family_members  if tag==1, or
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-447.57566}  
+Iteration 1:{space 3}log likelihood = {res:-442.88964}  
+Iteration 2:{space 3}log likelihood = {res:-442.81648}  
+Iteration 3:{space 3}log likelihood = {res:-442.81647}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       900
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      9.52
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0020
+{txt}Log likelihood = {res}-442.81647{txt}{col 49}Pseudo R2{col 67}= {res}    0.0106
+
+{txt}{hline 30}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}che_direct_nondirect_indir~40{col 31}{c |} Odds Ratio{col 43}   Std. Err.{col 55}      z{col 63}   P>|z|{col 71}     [95% Con{col 84}f. Interval]
+{hline 30}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}total_no_of_family_members {c |}{col 31}{res}{space 2} 1.169616{col 43}{space 2}  .058723{col 54}{space 1}    3.12{col 63}{space 3}0.002{col 71}{space 4} 1.060003{col 84}{space 3} 1.290564
+{txt}{space 24}_cons {c |}{col 31}{res}{space 2} .1162269{col 43}{space 2} .0302238{col 54}{space 1}   -8.28{col 63}{space 3}0.000{col 71}{space 4} .0698167{col 84}{space 3} .1934881
+{txt}{hline 30}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}.  bys area :logit che_direct_nondirect_indirect_40 total_no_of_family_members  if tag==1, or
+
+{txt}{hline}
+-> area = R
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-304.35375}  
+Iteration 1:{space 3}log likelihood = {res:-301.39334}  
+Iteration 2:{space 3}log likelihood = {res:-301.35275}  
+Iteration 3:{space 3}log likelihood = {res:-301.35275}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       600
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      6.00
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0143
+{txt}Log likelihood = {res}-301.35275{txt}{col 49}Pseudo R2{col 67}= {res}    0.0099
+
+{txt}{hline 30}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}che_direct_nondirect_indir~40{col 31}{c |} Odds Ratio{col 43}   Std. Err.{col 55}      z{col 63}   P>|z|{col 71}     [95% Con{col 84}f. Interval]
+{hline 30}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}total_no_of_family_members {c |}{col 31}{res}{space 2} 1.158788{col 43}{space 2}  .068928{col 54}{space 1}    2.48{col 63}{space 3}0.013{col 71}{space 4}  1.03127{col 84}{space 3} 1.302075
+{txt}{space 24}_cons {c |}{col 31}{res}{space 2} .1266797{col 43}{space 2} .0392471{col 54}{space 1}   -6.67{col 63}{space 3}0.000{col 71}{space 4} .0690229{col 84}{space 3}  .232499
+{txt}{hline 30}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> area = U
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-142.92316}  
+Iteration 1:{space 3}log likelihood = {res:-141.22428}  
+Iteration 2:{space 3}log likelihood = {res:-141.19092}  
+Iteration 3:{space 3}log likelihood = {res:-141.19091}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       300
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}      3.46
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0627
+{txt}Log likelihood = {res}-141.19091{txt}{col 49}Pseudo R2{col 67}= {res}    0.0121
+
+{txt}{hline 30}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}che_direct_nondirect_indir~40{col 31}{c |} Odds Ratio{col 43}   Std. Err.{col 55}      z{col 63}   P>|z|{col 71}     [95% Con{col 84}f. Interval]
+{hline 30}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}total_no_of_family_members {c |}{col 31}{res}{space 2} 1.192772{col 43}{space 2} .1116339{col 54}{space 1}    1.88{col 63}{space 3}0.060{col 71}{space 4} .9928686{col 84}{space 3} 1.432924
+{txt}{space 24}_cons {c |}{col 31}{res}{space 2} .0971424{col 43}{space 2}  .046528{col 54}{space 1}   -4.87{col 63}{space 3}0.000{col 71}{space 4} .0379937{col 84}{space 3} .2483739
+{txt}{hline 30}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. logit direct_nondirect_indirect_10 ib4. age_gr if tag==1, or
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-561.12647}  
+Iteration 1:{space 3}log likelihood = {res:-555.61632}  
+Iteration 2:{space 3}log likelihood = {res:-555.59614}  
+Iteration 3:{space 3}log likelihood = {res:-555.59614}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       900
+{txt}{col 49}LR chi2({res}3{txt}){col 67}= {res}     11.06
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0114
+{txt}Log likelihood = {res}-555.59614{txt}{col 49}Pseudo R2{col 67}= {res}    0.0099
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}age_gr {c |}
+{space 26}1  {c |}{col 30}{res}{space 2} 1.575489{col 42}{space 2} .2937758{col 53}{space 1}    2.44{col 62}{space 3}0.015{col 70}{space 4} 1.093188{col 83}{space 3} 2.270575
+{txt}{space 26}2  {c |}{col 30}{res}{space 2} 1.954212{col 42}{space 2} .4181949{col 53}{space 1}    3.13{col 62}{space 3}0.002{col 70}{space 4} 1.284747{col 83}{space 3} 2.972529
+{txt}{space 26}3  {c |}{col 30}{res}{space 2} 1.345354{col 42}{space 2} .3096027{col 53}{space 1}    1.29{col 62}{space 3}0.197{col 70}{space 4} .8569425{col 83}{space 3} 2.112133
+{txt}{space 28} {c |}
+{space 23}_cons {c |}{col 30}{res}{space 2} .3247423{col 42}{space 2} .0470906{col 53}{space 1}   -7.76{col 62}{space 3}0.000{col 70}{space 4} .2444032{col 83}{space 3} .4314901
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+. bys area :logit direct_nondirect_indirect_10 ib4. age_gr if tag==1, or
+
+{txt}{hline}
+-> area = R
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-379.79522}  
+Iteration 1:{space 3}log likelihood = {res:-376.87286}  
+Iteration 2:{space 3}log likelihood = {res:-376.86529}  
+Iteration 3:{space 3}log likelihood = {res:-376.86529}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       600
+{txt}{col 49}LR chi2({res}3{txt}){col 67}= {res}      5.86
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.1186
+{txt}Log likelihood = {res}-376.86529{txt}{col 49}Pseudo R2{col 67}= {res}    0.0077
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}age_gr {c |}
+{space 26}1  {c |}{col 30}{res}{space 2} 1.581352{col 42}{space 2} .3511392{col 53}{space 1}    2.06{col 62}{space 3}0.039{col 70}{space 4} 1.023338{col 83}{space 3} 2.443643
+{txt}{space 26}2  {c |}{col 30}{res}{space 2} 1.697872{col 42}{space 2} .4307076{col 53}{space 1}    2.09{col 62}{space 3}0.037{col 70}{space 4} 1.032706{col 83}{space 3} 2.791473
+{txt}{space 26}3  {c |}{col 30}{res}{space 2} 1.390912{col 42}{space 2} .3939679{col 53}{space 1}    1.16{col 62}{space 3}0.244{col 70}{space 4} .7983656{col 83}{space 3} 2.423247
+{txt}{space 28} {c |}
+{space 23}_cons {c |}{col 30}{res}{space 2} .3533835{col 42}{space 2} .0599664{col 53}{space 1}   -6.13{col 62}{space 3}0.000{col 70}{space 4} .2533985{col 83}{space 3}   .49282
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{hline}
+-> area = U
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res: -180.6455}  
+Iteration 1:{space 3}log likelihood = {res:-177.30331}  
+Iteration 2:{space 3}log likelihood = {res:-177.26999}  
+Iteration 3:{space 3}log likelihood = {res:-177.26999}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}       300
+{txt}{col 49}LR chi2({res}3{txt}){col 67}= {res}      6.75
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0803
+{txt}Log likelihood = {res}-177.26999{txt}{col 49}Pseudo R2{col 67}= {res}    0.0187
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}direct_nondirect_indirect_10{col 30}{c |} Odds Ratio{col 42}   Std. Err.{col 54}      z{col 62}   P>|z|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}age_gr {c |}
+{space 26}1  {c |}{col 30}{res}{space 2} 1.640823{col 42}{space 2} .5706748{col 53}{space 1}    1.42{col 62}{space 3}0.155{col 70}{space 4} .8298803{col 83}{space 3} 3.244201
+{txt}{space 26}2  {c |}{col 30}{res}{space 2} 2.760776{col 42}{space 2} 1.107739{col 53}{space 1}    2.53{col 62}{space 3}0.011{col 70}{space 4} 1.257457{col 83}{space 3} 6.061345
+{txt}{space 26}3  {c |}{col 30}{res}{space 2} 1.386364{col 42}{space 2}  .561641{col 53}{space 1}    0.81{col 62}{space 3}0.420{col 70}{space 4} .6266715{col 83}{space 3} 3.067004
+{txt}{space 28} {c |}
+{space 23}_cons {c |}{col 30}{res}{space 2} .2622951{col 42}{space 2} .0736734{col 53}{space 1}   -4.76{col 62}{space 3}0.000{col 70}{space 4} .1512533{col 83}{space 3} .4548576
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta"
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta saved
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta saved
+
+{com}. cd log
+{err}unable to change to log
+{txt}{search r(170), local:r(170);}
+
+{com}. wd
+{err}command {bf}wd{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. cd
+{res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta saved
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_paper_final_04_10_2022\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}14 Mar 2023, 14:44:33
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\paper_3_final_14032023\papercheck_03032023.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Mar 2023, 14:56:39
+
+{com}. save "C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta", replace
+{txt}file C:\Users\welcome\Dropbox\My PC (LAPTOP-E0CLJDR9)\Desktop\CHE PAPER 22082022\che_data_14032023.dta saved
+
+{com}. ed
+
+. exit, clear
